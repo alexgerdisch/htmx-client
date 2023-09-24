@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMX+BUN</title>
+  </head>
+  <body>
+
+    <div id="app">
+        <h1>HTMX 💾 + BUN 🥟</h1>
+        <div hx-target="this" hx-swap="outerHTML">
+            <div><label>First Name</label>: Bumpy</div>
+            <div><label>Last Name</label>: McJumpy</div>
+            <div><label>Email</label>: bmcjumpy@jesslex.com</div>
+            <button hx-get="http://0.0.0.0:3000/contact/1/edit" class="btn btn-primary">
+            Click To Edit
+            </button>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
